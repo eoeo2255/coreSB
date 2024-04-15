@@ -13,7 +13,7 @@ public class MemberApp {
 
         //  ApplicationContext를 스프링 컨테이너라고 함
         ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
-        //  bean의 이름은 메서드명을 기본으로 함, (이름 ,타입)
+        //  bean의 이름은 메서드명을 기본으로 함 (이름(생략 가능) ,타입)
         MemberService memberService = applicationContext.getBean("memberService", MemberService.class);
 
         Member member = new Member(1L, "member", Grade.VIP);
