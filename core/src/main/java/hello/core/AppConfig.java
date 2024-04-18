@@ -16,6 +16,7 @@ import org.springframework.context.annotation.Configuration;
 //  설정 정보
 @Configuration
 public class AppConfig {
+
     @Bean
     public MemberService memberService(){
         return new MemberServiceImpl(memberRepository());
